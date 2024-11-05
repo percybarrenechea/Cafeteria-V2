@@ -1,0 +1,96 @@
+:root {
+    --main-color: #00af7bd5;
+    --second-color: #1e3932;
+    --bg: #f4f4f9;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--second-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    color: var(--second-color);
+    margin-bottom: 20px;
+}
+
+.opciones-pago {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.pago-btn {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.pago-btn:hover {
+    background-color: #007f56;
+}
+
+.codigo-pago {
+    max-width: 200px;
+    margin: 20px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+form label {
+    font-size: 14px;
+    color: var(--second-color);
+}
+
+form input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form button {
+    align-self: center;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #007f56;
+}

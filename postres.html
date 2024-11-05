@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Postres</title>
+    <link rel="icon" href="logo.ico">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="container__menu">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+                <nav id="nav">
+                    <img src="img/logo.png" alt="">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cafe.html">Cafes</a></li>
+                        <li><a href="pasteles.html">Pasteles</a></li>
+                        <li><a href="carrito.html?from=cafe.html">Carrito</a> <!-- Link del carrito -->                 
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="titu">
+        <h1>Menú de Postres</h1>
+    </div>
+    <div class="shop-container">
+        <div class="box-row">
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/postres/alfajores.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Alfajores</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Alfajores', 8.00, 'img/postres/alfajores.png')">Ordena Ahora</a>
+            </div>
+
+        <div class="box">
+            <div class="box-img">
+                <img src="img/postres/bunuelos.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Buñuelos</h2>
+            <span class="price">S/. 10.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Buñuelos', 10.00, 'img/postres/bunuelos.png')">Ordena Ahora</a>
+        </div>
+
+        <div class="box">
+            <div class="box-img">
+                <img src="img/postres/galletas.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Galletas</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Galletas', 8.00, 'img/postres/galletas.png')">Ordena Ahora</a>
+        </div>
+            </div>
+            <div class="box-row">
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/postres/gelatina.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Gelatina</h2>
+            <span class="price">S/. 5.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Gelatina', 5.00, 'img/postres/gelatina.png')">Ordena Ahora</a>
+        </div>
+
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/postres/gelato.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Gelato</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Gelato', 8.00, 'img/postres/gelato.png')">Ordena Ahora</a>
+        </div>
+
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/postres/helado.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Helado</h2>
+            <span class="price">S/. 3.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Helado', 3.00, 'img/postres/helado.png')">Ordena Ahora</a>
+        </div>
+    </div>
+    <div class="box-row">
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/postres/lecheasadaj.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Leche Asada</h2>
+            <span class="price">S/. 7.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Leche Asada', 7.00, 'img/postres/lecheasadaj.png')">Ordena Ahora</a>
+        </div>
+
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/postres/mazamorra morada.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Mazamorra Morada</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Mazamorra Morada', 8.00, 'img/postres/mazamorra morada.png')">Ordena Ahora</a>
+        </div>
+
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/postres/milhoja.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Milhoja</h2>
+            <span class="price">S/. 5.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Milhoja', 5.00, 'img/postres/milhoja.png')">Ordena Ahora</a>
+        </div>
+    </div>
+    <div class="box-row">
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/postres/mousse de chocolate.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Mousse de Chocolate</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Mousse de Chocolate', 8.00, 'img/postres/mousse de chocolate.png')">Ordena Ahora</a>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/postres/pie de manzana.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Pie de Manzana</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Pie de Manzana', 8.00, 'img/postres/pie de manzana.png')">Ordena Ahora</a>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/postres/tarta de chocolate.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Tarta de Chocolate</h2>
+            <span class="price">S/. 5.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Tarta de Chocolate', 5.00, 'img/postres/tarta de chocolate.png')">Ordena Ahora</a>
+        </div>
+    </div>
+    </div>
+
+    <!--CONTACTO-->
+    <section class="contacto" id="contacto">
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=61552994519170"><i class='bx bxl-facebook'></i></a>
+            <a href="https://instagram.com/isabelle.cafeteria?igshid=MzRlODBiNWFlZA=="><i class='bx bxl-instagram'></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Politica de Privacidad</a>
+            <a href="#">Terminos de nosotros</a>
+            <a href="#">Nuestra Compañia</a>
+        </div>
+        <p>&#169; CafeteriaIsabelle Todos los Derechos Reservados</p>
+    </section>
+
+    <script>
+        // Función para agregar productos al carrito y redirigir a carrito.html
+        function agregarAlCarrito(nombre, precio, imagen) {
+            let producto = { nombre, precio, imagen };
+            let carrito = localStorage.getItem('carrito');
+            carrito = carrito ? JSON.parse(carrito) : [];
+            carrito.push(producto);
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+
+            // Redirigir a carrito.html después de agregar el producto
+            window.location.href = 'carrito.html';
+        }
+    </script>
+</body>
+</html>

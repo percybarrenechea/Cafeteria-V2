@@ -1,0 +1,110 @@
+:root {
+    --main-color: #00af7bd5;  
+    --second-color: #ebdbc8;  
+    --bg-color: #fff;
+    --text-color: #010103;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--main-color);
+}
+
+#carrito-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--second-color);
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    width: 50px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.item p {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.precio {
+    font-weight: bold;
+}
+
+.remove-btn {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #008f66;
+}
+
+#total {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+button {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #008f66;
+}
+
+/* Estilo para el botón de flecha para volver */
+.back-arrow {
+    display: inline-block;
+    font-size: 30px;
+    color: var(--text-color);
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-arrow:hover {
+    color: #008f66;
+}

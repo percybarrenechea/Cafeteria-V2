@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pasteles</title>
+    <link rel="icon" href="logo.ico">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="container__menu">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+                <nav id="nav">
+                    <img src="img/logo.png" alt="">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cafe.html">Cafes</a></li>
+                        <li><a href="postres.html">Postres</a></li>
+                        <li><a href="carrito.html?from=cafe.html">Carrito</a> <!-- Link del carrito -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    </header>
+    <div class="titu">
+        <h1>Menú de Pasteles</h1>
+    </div>
+    <div class="shop-container">
+        <div class="box-row">
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/Pasteles/Pastel de Cafe.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Pastel de Café</h2>
+            <span class="price">S/. 30.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Pastel de Café', 30.00, 'img/Pasteles/Pastel de Cafe.png')">Ordena Ahora</a>
+            </div>
+
+        <div class="box">
+            <div class="box-img">
+                <img src="img/Pasteles/Pastel de Chocolate.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Pastel de Chocolate</h2>
+            <span class="price">S/. 40.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Pastel de Chocolate', 40.00, 'img/Pasteles/Pastel de Chocolate.png')">Ordena Ahora</a>
+            </div>
+
+        <div class="box">
+            <div class="box-img">
+                <img src="img/Pasteles/Pastel de Mango.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Pastel de Mango</h2>
+            <span class="price">S/. 30.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Pastel de Mango', 30.00, 'img/Pasteles/Pastel de Mango.png')">Ordena Ahora</a>
+            </div>
+            </div>
+            <div class="box-row">
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/Pasteles/Pastel de Vainilla.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Pastel de Vainilla</h2>
+            <span class="price">S/. 45.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Pastel de Vainilla', 45.00, 'img/Pasteles/Pastel de Vainilla.png')">Ordena Ahora</a>
+            </div>
+
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/Pasteles/Pastel de Zanahoria.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Pastel de Zanahoria</h2>
+            <span class="price">S/. 38.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Pastel de Zanahoria', 38.00, 'img/Pasteles/Pastel de Zanahoria.png')">Ordena Ahora</a>
+            </div>
+
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/Pasteles/Tarta de Cereza.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Tarta de Cereza</h2>
+            <span class="price">S/. 35.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Tarta de Cereza', 35.00, 'img/Pasteles/Tarta de Cereza.png')">Ordena Ahora</a>
+            </div>
+    </div>
+    <div class="box-row">
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/Pasteles/Tarta de Fresa.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Tarta de Fresa</h2>
+            <span class="price">S/. 37.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Tarta de Fresa', 37.00, 'img/Pasteles/Tarta de Fresa.png')">Ordena Ahora</a>
+            </div>
+
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/Pasteles/Tarta de Limon.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Tarta de Limón</h2>
+            <span class="price">S/. 48.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Tarta de Limón', 48.00, 'img/Pasteles/Tarta de Limon.png')">Ordena Ahora</a>
+            </div>
+
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/Pasteles/Tarta de Manzana.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Tarta de Manzana</h2>
+            <span class="price">S/. 45.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Tarta de Manzana', 45.00, 'img/Pasteles/Tarta de Manzana.png')">Ordena Ahora</a>
+            </div>
+    </div>
+    <div class="box-row">
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/Pasteles/Tarta de Queso.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Tarta de Queso</h2>
+            <span class="price">S/. 58.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Tarta de Queso', 58.00, 'img/Pasteles/Tarta de Queso.png')">Ordena Ahora</a>
+            </div>
+    </div>
+    </div>
+
+    <!--CONTACTO-->
+    <section class="contacto" id="contacto">
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=61552994519170"><i class='bx bxl-facebook'></i></a>
+            <a href="https://instagram.com/isabelle.cafeteria?igshid=MzRlODBiNWFlZA=="><i class='bx bxl-instagram'></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Politica de Privacidad</a>
+            <a href="#">Terminos de nosotros</a>
+            <a href="#">Nuestra Compañia</a>
+        </div>
+        <p>&#169; CafeteriaIsabelle Todos los Derechos Reservados</p>
+    </section>
+
+    <script>
+        // Función para agregar productos al carrito y redirigir a carrito.html
+        function agregarAlCarrito(nombre, precio, imagen) {
+            let producto = { nombre, precio, imagen };
+            let carrito = localStorage.getItem('carrito');
+            carrito = carrito ? JSON.parse(carrito) : [];
+            carrito.push(producto);
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+
+            // Redirigir a carrito.html después de agregar el producto
+            window.location.href = 'carrito.html';
+        }
+    </script>
+</body>
+</html>

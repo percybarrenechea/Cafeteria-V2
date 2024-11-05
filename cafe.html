@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafes</title>
+    <link rel="icon" href="logo.ico">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="container__menu">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+                <nav id="nav">
+                    <img src="img/logo.png" alt="">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="postres.html">Postres</a></li>
+                        <li><a href="pasteles.html">Pasteles</a></li>
+                        <li><a href="carrito.html?from=cafe.html">Carrito</a> <!-- Link del carrito -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="titu">
+        <h1>Menú de Cafés</h1>
+    </div>
+    <div class="shop-container">
+        <div class="box-row">
+        <div class="box">
+            <div class="box-img">
+                <img src="img/cafes/1FresaCremeFrappuccino.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Fresa Crème Frappuccino</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Fresa Crème Frappuccino', 8.00, 'img/cafes/1FresaCremeFrappuccino.png')">Ordena Ahora</a>
+            </div>
+
+        <div class="box">
+            <div class="box-img">
+                <img src="img/cafes/2PumpkinSpiceFrappuccino.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Pumpkin Spice Frappuccino</h2>
+            <span class="price">S/. 17.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Pumpkin Spice Frappuccino', 17.00, 'img/cafes/2PumpkinSpiceFrappuccino.png')">Ordena Ahora</a>
+            </div>
+
+        <div class="box">
+            <div class="box-img">
+                <img src="img/cafes/3Black&WhiteMochaFrappuccino.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Black & White Mocha Frappuccino</h2>
+            <span class="price">S/. 20.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Black & White Mocha Frappuccino', 20.00, 'img/cafes/3Black&WhiteMochaFrappuccino.png')">Ordena Ahora</a>
+        </div>
+            </div>
+            <div class="box-row">
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/cafes/4UltimateCaramelFrappuccino.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Ultimate Caramel Frappuccino</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Ultimate Caramel Frappuccino', 8.00, 'img/cafes/4UltimateCaramelFrappuccino.png')">Ordena Ahora</a>
+        </div>
+
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/cafes/5DobleMochaFrapuccino.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Doble Mocha Frapuccino</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Doble Mocha Frapuccino', 8.00, 'img/cafes/5DobleMochaFrapuccino.png')">Ordena Ahora</a>
+        </div>
+
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/cafes/6Americano.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Cafe Americano</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Café Americano', 8.00, 'img/cafes/6Americano.png')">Ordena Ahora</a>
+        </div>
+    </div>
+    <div class="box-row">
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/cafes/7Latte.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Latte</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Latte', 8.00, 'img/cafes/7Latte.png')">Ordena Ahora</a>
+        </div>
+
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/cafes/8VainillaLatte.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Vainilla Latte</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Vainilla Latte', 8.00, 'img/cafes/8VainillaLatte.png')">Ordena Ahora</a>
+        </div>
+
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/cafes/9CaramelMacchiato.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Caramel Macchiato</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Caramel Macchiato', 8.00, 'img/cafes/9CaramelMacchiato.png')">Ordena Ahora</a>
+        </div>
+    </div>
+    <div class="box-row">
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/cafes/10Mochacafe.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Mocha café</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Mocha café', 8.00, 'img/cafes/10Mochacafe.png')">Ordena Ahora</a>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/cafes/11ManjarblancoLatte.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Manjar blanco Latte</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Manjar blanco Latte', 8.00, 'img/cafes/11ManjarblancoLatte.png')">Ordena Ahora</a>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                 <img src="img/cafes/12AlgarrobinaLatte.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h2 class="product-title">Algarrobina Latte</h2>
+            <span class="price">S/. 8.00</span>
+            <a href="#" class="btn add-cart" onclick="agregarAlCarrito('Algarrobina Latte', 8.00, 'img/cafes/12AlgarrobinaLatte.png')">Ordena Ahora</a>
+        </div>
+    </div>
+    </div>
+
+    <!--CONTACTO-->
+    <section class="contacto" id="contacto">
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=61552994519170"><i class='bx bxl-facebook'></i></a>
+            <a href="https://instagram.com/isabelle.cafeteria?igshid=MzRlODBiNWFlZA=="><i class='bx bxl-instagram'></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Politica de Privacidad</a>
+            <a href="#">Terminos de nosotros</a>
+            <a href="#">Nuestra Compañia</a>
+        </div>
+        <p>&#169; CafeteriaIsabelle Todos los Derechos Reservados</p>
+    </section>
+
+    <script>
+        // Función para agregar productos al carrito y redirigir a carrito.html
+        function agregarAlCarrito(nombre, precio, imagen) {
+            let producto = { nombre, precio, imagen };
+            let carrito = localStorage.getItem('carrito');
+            carrito = carrito ? JSON.parse(carrito) : [];
+            carrito.push(producto);
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+
+            // Redirigir a carrito.html después de agregar el producto
+            window.location.href = 'carrito.html';
+        }
+    </script>
+</body>
+</html>

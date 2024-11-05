@@ -1,0 +1,126 @@
+:root {
+    --main-color: #00af7bd5;
+    --second-color: #1e3932;
+    --bg: #010103;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+    --font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo para la página de pago */
+.payment-tab {
+    font-family: var(--font-family);
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border: var(--border);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 24px;
+    color: white;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-around; /* Espaciado entre las opciones */
+    flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
+    margin: 20px 0;
+}
+
+.payment-options label {
+    margin: 0 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+#yape-image,
+#plin-image {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#credit-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#credit-card-info label {
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+input[type="text"],
+input[type="int"],
+input[type="date"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: var(--bg);
+}
+
+/* Centra el botón de pago */
+.btn-pay {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--main-color);
+}
+
+button.btn-pay {
+    display: block;
+    margin: 20px auto;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button.btn-pay:hover {
+    background-color: var(--second-color);
+}
+
+/* Estilos para responsividad */
+@media screen and (max-width: 768px) {
+    .payment-tab {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .payment-options {
+        flex-direction: column;
+        align-items: center; /* Centra las opciones en pantallas pequeñas */
+    }
+    .payment-options label {
+        font-size: 16px;
+    }
+}
+
